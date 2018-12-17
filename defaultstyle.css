@@ -2,8 +2,8 @@ body{
     background-color:#0d1321;
     font-family:sans-serif;
     padding:0;
-    margin:0;
-    width:100%;
+    margin:auto;
+    width:80%;
     color:#f0ebd8;
 }
 .topnav ul{
@@ -27,4 +27,26 @@ body{
 .topnav li a:hover{
     background-color:#2b4162;
     color:#000000;
+}
+.breadcrumb{
+    background-color:#0d1321;
+    color:#f0ebd8;
+}
+h1{
+    font-size:2.25em;
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+ol{
+    display:block;
+    width:65%;
+    margin:auto;
+}
+ol li{
+    padding:4px;
 }
