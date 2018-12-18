@@ -56,6 +56,7 @@ ol{
 ol li{
     padding:4px;
 }
+/*The section for tables is currently defunct, as the table functionality of the site has been supplanted by Google Sheets in <iframe> elements. Thank god.*/
 table,th,td{
     border:thin solid #f0ebd8;
     border-collapse:collapse;
@@ -65,6 +66,15 @@ table{
     width:75%;
     margin:auto;
     padding:12px;
+}
+iframe{
+    display:block;
+    min-width:60%;
+    max-width:70%;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+
 }
 a:link,a:visited{
     color:#f0ebd8;
