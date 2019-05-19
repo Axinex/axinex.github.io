@@ -5,20 +5,50 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Welcome to the sandbox, we've got fun and games...">
-        <title>The Sandbox</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>The Sandbox :: DEV</title>
     </head>
     <body>
         <div class="wrapper">
-            <div class="topnav">
-
+            <div class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="dcshome.html">DCS World Tool</a>
+                    <button class="dropdown-btn">RimWorld
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="21ca.html">21st Century Arsenal</a>
+                        <a href="coredoc.html">Core Documentation</a>
+                    </div>
+                    <a href="about.html">About</a>
+                </nav>
             </div>
+            <main>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis neque purus. Vestibulum sagittis, ante quis pharetra sollicitudin, tortor nunc convallis ipsum, vitae venenatis ligula eros quis lacus. Vestibulum sed ante vitae ante luctus ultricies. Duis a vulputate risus, gravida venenatis elit. Donec quis ipsum fermentum, fringilla arcu et, tincidunt turpis. Suspendisse dignissim, risus in dapibus imperdiet, nulla mauris pellentesque augue, ac bibendum felis urna sit amet lorem. Mauris et laoreet dolor. In hac habitasse platea dictumst. Vestibulum rhoncus, nisl eu sagittis rhoncus, est nulla condimentum ipsum, eget dignissim lorem nulla eu turpis. In vel efficitur lacus. Aliquam congue dui et massa rhoncus, in elementum arcu finibus. </p>
             <p> Maecenas nec orci dolor. Praesent volutpat ultricies eros, vel scelerisque nulla efficitur vel. Duis ullamcorper massa sit amet mauris consectetur tempor. Quisque iaculis a ante in mattis. Curabitur maximus mi ullamcorper, feugiat odio vitae, suscipit dui. Integer et scelerisque libero. In nec metus molestie, pharetra odio vel, fringilla felis. Ut sed odio quis neque elementum consectetur. Curabitur efficitur ullamcorper tincidunt. Cras egestas erat vehicula quam fringilla tristique. Phasellus dui justo, interdum ac ligula eu, egestas rhoncus massa. Donec mattis venenatis ultrices. Praesent felis ligula, vulputate sit amet lorem et, venenatis congue leo. Donec facilisis purus in elit posuere, in maximus magna tempus. </p>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula ornare suscipit. Nulla non lectus euismod, ultricies enim nec, blandit neque. Cras in consequat purus, sed lobortis est. Integer accumsan mi in odio commodo interdum. Nam erat libero, imperdiet quis convallis id, suscipit nec enim. Morbi sed magna sed ex suscipit condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar convallis nulla, non tristique justo fermentum id. Cras et interdum eros. Cras ultrices turpis eu mauris sagittis ultricies. Sed hendrerit viverra quam eu bibendum. Donec malesuada augue vel est commodo lacinia. Donec vel elit diam. Proin id erat id mauris pulvinar pulvinar. Aenean mi quam, ullamcorper molestie faucibus in, tristique id diam. </p>
             <p> Ut ac ullamcorper erat. Fusce ultrices sodales nibh at fermentum. Proin in massa nibh. Nam id nisl at magna consequat mattis. Mauris interdum justo vel euismod feugiat. Suspendisse gravida nibh nec ultricies finibus. Nullam gravida nibh nec pulvinar laoreet. Curabitur tincidunt lectus et lectus placerat, vel venenatis purus ultrices. Integer gravida, eros et viverra bibendum, ex augue commodo erat, eget tempus eros turpis eu elit. </p>
             <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbzJfFTT6-Mu3gO79Dau8DQh078-MjSe6lzfP2NZyoPGDw0AhDTD39G_HTTMEXAGYbRvduTjvWjWGe/pubhtml?widget=true&amp;headers=false"></iframe>
             <!--iframe for the purpose of embedding a Google Sheets document.-->
+            </main>
         </div>
-
+        <script>
+            //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                    } else {
+                      dropdownContent.style.display = "block";
+                    }
+                  });
+                }
+        </script>
     </body>
 </html>
