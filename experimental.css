@@ -1,17 +1,12 @@
 body{
-    /*background-image:url(images/sandbox/Titanium.jpg);*/
     width:100%;
     font-family: 'Roboto', sans-serif;
     color: #f1f1f1;
     background-color: #252525;
-    /*background: #000000; /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to top, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to top, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .wrapper{
     max-width:75%;
     height:100%;
-    /*position:relative;*/
     background-color:#252525;
     margin-left:auto;
     margin-right:auto;
